@@ -1,0 +1,172 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "h"
+    "m"
+    "f";
+  min-height: 100vh;
+}
+
+/* Footer */
+footer {
+  background-color: #bcbbbb;
+  padding: 10px;
+  grid-area: f;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "lg copy cp rs"
+  ;
+}
+
+.cp{
+  grid-area: cp;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.copy{
+  grid-area: copy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rs{
+  gap: 10px;
+  grid-area: rs;
+  list-style: none; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img#logodlmfooter {
+  width: 60px;
+  height: auto;
+  display: flex;
+  margin: 0 auto 10px; 
+  grid-area: lg;
+}
+
+.redsocial{
+  width: 27px;
+}
+
+/* main */
+
+.imagenes{
+  width: 400px;
+  margin-top: 30px;;
+}
+.main{
+  text-align: center;
+  grid-area: m;
+}
+
+/*Nuestra historia main*/
+
+.nh-main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0,5fr 1fr;
+  grid-template-areas: 
+    "h h"
+    "p img";
+  text-align: center;
+  grid-area: m;
+  padding: 20px;
+}
+
+.nh-img{
+  grid-area: img;
+  width: 350px;
+  justify-self: center;
+  align-self: center;
+  margin: 0 20px;
+}
+
+.nh-h2{
+  grid-area: h;
+  margin-bottom: 20px;
+  color: #2d5380;
+  justify-content: center;
+  allign-items: center;
+}
+
+.nh-p{
+  grid-area: p;
+  margin: 0 20px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+
+/* nav */
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+    "logo h1 link";
+  background-color: #bcbbbb; 
+  padding: 10px;
+}
+
+.logonav {
+  width: 90px;
+  height: auto;
+}
+
+.logo-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-nav {
+  color: #2d5380;
+  grid-area: h1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.links-nav{
+  grid-area: link;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+
+}
+
+a {
+  color: #2d5380;
+  text-decoration: none; /* que no tenga subrayado */
+}
+a:hover {
+  text-decoration: underline; /* que se subraye cuando se pasa el cursor */
+}
+/*nav*/
+
+
+
+
