@@ -166,5 +166,28 @@ a:hover {
 /*nav*/
 
 
+.contactanos-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "h1"
+    "label-nombre"
+    "input-nombre"
+    "label-email"
+    "input-email"
+    "submit";
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.lista-no{
+  list-style-type: none;
+}
 
 
