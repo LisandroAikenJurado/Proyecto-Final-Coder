@@ -1,8 +1,10 @@
 //sass --watch style.scss style.css
-
+@use "variables";
+@use "contactanos";
+@use "nH";
+@use "nO";
 @use "header";
 @use "footer";
-@use "variables";
 *{
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;

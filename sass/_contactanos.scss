@@ -1,0 +1,20 @@
+@use "variables" as v;
+.contactanos-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "h1"
+    "label-nombre"
+    "input-nombre"
+    "label-email"
+    "input-email"
+    "submit";
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid v.$color-principal;
+  background-color: v.$bg-color;
+  border-radius: 5px;
+}
