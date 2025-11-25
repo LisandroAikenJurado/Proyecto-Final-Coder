@@ -35,13 +35,13 @@ nav .titulo_nav {
   align-items: center;
   justify-content: center;
 }
-nav .links_nav {
+nav .dropdown {
   grid-area: link;
-  list-style: none;
+}
+nav .button_dropdown {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 nav a {
   text-decoration: none;
@@ -108,6 +108,10 @@ body {
   grid-template-areas: "h" "m" "f";
   min-height: 100vh;
   grid-area: m;
+}
+
+.imagenes {
+  height: 35vw;
 }
 
 /*# sourceMappingURL=style.css.map */

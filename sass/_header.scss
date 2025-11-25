@@ -20,16 +20,17 @@ nav{
     grid-area: h1;
     @include v.display (flex, center, center);
   }
-  .links_nav{
+  .links{
     grid-area: link;
-    list-style: none;
-    @include v.display (flex, center, center);
-    flex-direction: column;
-  }a{
+  }
+  a{
     text-decoration: none;
     color: v.$color-principal;
   }a:hover{
     text-decoration: underline;
+  }
+  .ul-offcanvas{
+    list-style: none;
   }
 }
 
