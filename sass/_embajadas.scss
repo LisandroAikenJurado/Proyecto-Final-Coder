@@ -1,0 +1,15 @@
+@use "variables" as v;
+
+.embajadas_main {
+  padding: 20px;
+  margin: 0 auto;
+  h2{
+    text-align: center;
+    color: v.$color-secundario;
+    margin-bottom: 20px;
+  }
+  h3{
+    color: v.$color-principal;
+    margin-bottom: 10px;
+  }
+}

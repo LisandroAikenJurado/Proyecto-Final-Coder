@@ -1,8 +1,13 @@
 @use "variables" as v;
+
+.contactanos_main{
+  display: flex;
+  align-items: center;
+}
+
+
 .contactanos-form{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
   grid-template-areas:
     "h1"
     "label-nombre"
@@ -17,4 +22,18 @@
   border: 1px solid v.$color-principal;
   background-color: v.$bg-color;
   border-radius: 5px;
+}
+
+
+@include v.mobile{
+  .contactanos-form{
+    padding: 10px;
+    max-width: 90%;
+  }
+}
+@include v.tablet{
+  .contactanos-form{
+    padding: 15px;
+    max-width: 70%;
+  }
 }
