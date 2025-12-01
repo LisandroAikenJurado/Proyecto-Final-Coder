@@ -6,3 +6,15 @@ $bg-color: #cddfe9;
   align-items: $allign;
   justify-content: $justify;
 }
+
+@mixin mobile{
+    @media (min-width: 320px) and (max-width: 430px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: 431px) and (max-width: 968px){
+        @content;
+    }
+}

@@ -25,11 +25,42 @@ nav{
     text-decoration: underline;
   }
   .ul-offcanvas{
+    @include v.display (flex, center, center);
+    flex-direction: column;
     list-style: none;
   }
   .boton-ofcanvas{
     width: 2.5vw;
+}
+}
 
+@include v.tablet{
+  nav{
+    .logonav{
+      width: 10vw;
+    }
+    .titulo_nav{
+      font-size: 5vw;
+    }
+    .boton-ofcanvas{
+      width: 4vw;
+    }
+  }
+}
+
+@include v.mobile{
+  nav{
+    flex-direction: row;
+    gap: 2vw;
+    .logonav{
+      width: 15vw;
+    }
+    .titulo_nav{
+      font-size: 6vw;
+    }
+    .boton-ofcanvas{
+      width: 6vw;
+    }
   }
 }
 

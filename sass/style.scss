@@ -12,14 +12,11 @@
 }
 body {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
   grid-template-areas: 
     "h"
     "m"
     "f";
   min-height: 100vh;
-  grid-area: m;
 }
 .imagenes{
   height: 35vw;
