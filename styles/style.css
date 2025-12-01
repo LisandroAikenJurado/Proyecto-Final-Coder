@@ -1,17 +1,173 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @use "nH";
- *   | ^^^^^^^^^
- *   '
- *   sass\style.scss 4:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @use \"nH\";\d\a   \2502  ^^^^^^^^^\a   \2575 \a   sass\\style.scss 4:1  root stylesheet";
+.contactanos-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "h1" "label-nombre" "input-nombre" "label-email" "input-email" "submit";
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #2d5380;
+  background-color: #cddfe9;
+  border-radius: 5px;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  grid-area: h;
+  background-color: #cddfe9;
+}
+nav .logonav {
+  width: 7vw;
+  grid-area: logo;
+}
+nav .titulo_nav {
+  color: #2d5380;
+  grid-area: h1;
+}
+nav .links {
+  grid-area: link;
+}
+nav a {
+  text-decoration: none;
+  color: #2d5380;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav .ul-offcanvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+}
+nav .boton-ofcanvas {
+  width: 2.5vw;
+}
+
+@media (min-width: 431px) and (max-width: 968px) {
+  nav .logonav {
+    width: 10vw;
+  }
+  nav .titulo_nav {
+    font-size: 5vw;
+  }
+  nav .boton-ofcanvas {
+    width: 4vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  nav {
+    flex-direction: row;
+    gap: 2vw;
+  }
+  nav .logonav {
+    width: 15vw;
+  }
+  nav .titulo_nav {
+    font-size: 6vw;
+  }
+  nav .boton-ofcanvas {
+    width: 6vw;
+  }
+}
+footer {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  grid-area: f;
+  grid-template-areas: "lg copy cp rs";
+  background-color: #cddfe9;
+}
+footer .cp {
+  grid-area: cp;
+  text-align: center;
+  font-size: 1.5vw;
+}
+footer .copy {
+  grid-area: copy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5vw;
+}
+footer .rs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  grid-area: rs;
+  gap: 10px;
+  list-style-type: none;
+}
+footer img#logodlmfooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: lg;
+  width: 4vw;
+}
+footer .rs_img {
+  width: 3vw;
+}
+
+@media (min-width: 431px) and (max-width: 968px) {
+  footer {
+    gap: 1.5vw;
+  }
+  footer .cp {
+    font-size: 2.7vw;
+  }
+  footer .copy {
+    font-size: 2.7vw;
+  }
+  footer img#logodlmfooter {
+    width: 9vw;
+  }
+  footer .rs_img {
+    width: 5vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  footer {
+    gap: 3vw;
+    grid-template-areas: "lg" "cp" "copy" "rs";
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  footer .cp {
+    font-size: 4vw;
+  }
+  footer .copy {
+    font-size: 4vw;
+  }
+  footer img#logodlmfooter {
+    display: none;
+  }
+  footer .rs_img {
+    width: 7vw;
+    justify-content: space-around;
+  }
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "h" "m" "f";
+  min-height: 100vh;
+}
+
+.imagenes {
+  height: 35vw;
+}
+
+/*# sourceMappingURL=style.css.map */
