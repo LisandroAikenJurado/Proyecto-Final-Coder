@@ -193,8 +193,9 @@ footer .rs_img {
 }
 .embajadas_main h2 {
   text-align: center;
-  color: #037a40;
+  color: #2d5380;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .embajadas_main h3 {
   color: #2d5380;
@@ -264,6 +265,72 @@ footer .rs_img {
   font-size: 1.2rem;
 }
 
+.container-fluid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "h2 h2" "p1 img1" "img2 p2" "p3 img3";
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid .h2 {
+  color: #2d5380;
+  margin-bottom: 15px;
+  font-weight: bold;
+  grid-area: h2;
+}
+.container-fluid .p1 {
+  grid-area: p1;
+  text-align: justify;
+  padding: 10px;
+}
+.container-fluid .img1 {
+  grid-area: img1;
+  padding: 10px;
+}
+.container-fluid .img2 {
+  grid-area: img2;
+  padding: 10px;
+}
+.container-fluid .p2 {
+  grid-area: p2;
+  text-align: justify;
+  padding: 10px;
+}
+.container-fluid .p3 {
+  grid-area: p3;
+  text-align: justify;
+  padding: 10px;
+}
+.container-fluid .img3 {
+  grid-area: img3;
+  padding: 10px;
+}
+.container-fluid p {
+  color: #037a40;
+  font-size: 1.2rem;
+}
+.container-fluid .img-nos {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 431px) and (max-width: 968px) {
+  .container-fluid {
+    grid-template-areas: "h2 h2" "p1 img1" "img2 p2" "p3 img3";
+  }
+  .container-fluid .h2 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .container-fluid {
+    grid-template-areas: "h2" "img1" "p1" "img2" "p2" "img3" "p3";
+  }
+  .container-fluid .h2 {
+    font-size: 7vw;
+  }
+}
 * {
   font-family: "nunito", sans-serif;
   box-sizing: border-box;

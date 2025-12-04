@@ -1,0 +1,84 @@
+@use "variables" as v;
+
+.container-fluid{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: 
+    "h2 h2"
+    "p1 img1"
+    "img2 p2"
+    "p3 img3";
+    justify-content: center;
+    align-items: center;
+  .h2{
+    color: v.$color-principal;
+    margin-bottom: 15px;
+    font-weight: bold;
+    grid-area: h2;
+  }
+  .p1{
+    grid-area: p1;
+    text-align: justify;
+    padding: 10px;
+  }
+  .img1{
+    grid-area: img1;
+    padding: 10px;
+  }
+  .img2{
+    grid-area: img2;
+    padding: 10px;
+  }
+  .p2{
+    grid-area: p2;
+    text-align: justify;
+    padding: 10px;
+  }
+  .p3{
+    grid-area: p3;
+    text-align: justify;
+    padding: 10px;
+  }
+  .img3{
+    grid-area: img3;
+    padding: 10px;
+  }
+  p{
+    color: v.$color-secundario;
+    font-size: 1.2rem;
+  }
+  .img-nos{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@include v.tablet{
+  .container-fluid{
+    grid-template-areas: 
+      "h2 h2"
+      "p1 img1"
+      "img2 p2"
+      "p3 img3";
+      .h2{
+        font-size: 6vw;
+      }
+  }
+}
+
+@include v.mobile{
+  .container-fluid{
+    grid-template-areas: 
+      "h2"
+      "img1"
+      "p1"
+      "img2"
+      "p2"
+      "img3"
+      "p3";
+      .h2{
+        font-size: 7vw;
+      }
+  }
+}
