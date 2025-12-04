@@ -2,9 +2,9 @@
 .contactanos_main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
-.contactanos-form {
+.contactanos_main .contactanos-form {
   display: grid;
   grid-template-areas: "h1" "label-nombre" "input-nombre" "label-email" "input-email" "submit";
   gap: 10px;
@@ -17,13 +17,28 @@
 }
 
 @media (min-width: 320px) and (max-width: 430px) {
+  iframe {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .contactanos_main {
+    flex-direction: column;
+  }
   .contactanos-form {
     padding: 10px;
     max-width: 90%;
   }
 }
 @media (min-width: 431px) and (max-width: 968px) {
-  .contactanos-form {
+  iframe {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .contactanos_main {
+    flex-direction: column;
+  }
+  .contactanos_main .contactanos-form {
     padding: 15px;
     max-width: 70%;
   }
@@ -43,6 +58,7 @@ nav .logonav {
 nav .titulo_nav {
   color: black;
   grid-area: h1;
+  font-weight: bold;
 }
 nav .links {
   grid-area: link;
@@ -85,7 +101,7 @@ nav .boton-ofcanvas {
     width: 15vw;
   }
   nav .titulo_nav {
-    font-size: 6vw;
+    font-size: 6.5vw;
   }
   nav .boton-ofcanvas {
     width: 6vw;
@@ -183,6 +199,69 @@ footer .rs_img {
 .embajadas_main h3 {
   color: #2d5380;
   margin-bottom: 10px;
+}
+.embajadas_main .embajadas_mapa {
+  text-align: center;
+  margin-top: 20px;
+}
+.embajadas_main .embajadas_mapa p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.embajadas_main .embajadas_mapa iframe {
+  width: 80%;
+  height: 500px;
+  border: 1px solid #2d5380;
+  border-radius: 5px;
+}
+
+@media (min-width: 431px) and (max-width: 968px) {
+  .embajadas_main {
+    padding: 15px;
+  }
+  .embajadas_main .p1 {
+    font-size: 2vw;
+  }
+  .embajadas_main h2 {
+    font-size: 4.5vw;
+  }
+  .embajadas_main h3 {
+    font-size: 3vw;
+  }
+  .embajadas_main .embajadas_mapa iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .embajadas_main {
+    padding: 10px;
+  }
+  .embajadas_main .p1 {
+    font-size: 3vw;
+  }
+  .embajadas_main h2 {
+    font-size: 5vw;
+  }
+  .embajadas_main h3 {
+    font-size: 3.5vw;
+  }
+  .embajadas_main .embajadas_mapa iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+.main_home {
+  padding: 20px;
+  text-align: center;
+}
+.main_home h2 {
+  color: #2d5380;
+  margin-bottom: 15px;
+}
+.main_home p {
+  color: #037a40;
+  font-size: 1.2rem;
 }
 
 * {

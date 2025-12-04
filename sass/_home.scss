@@ -1,0 +1,14 @@
+@use "variables" as v;
+
+.main_home {
+  padding: 20px;
+  text-align: center;
+  h2 {
+    color: v.$color-principal;
+    margin-bottom: 15px;
+  }
+  p {
+    color: v.$color-secundario;
+    font-size: 1.2rem;
+  }
+}

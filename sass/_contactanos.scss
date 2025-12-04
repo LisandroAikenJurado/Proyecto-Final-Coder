@@ -3,37 +3,53 @@
 .contactanos_main{
   display: flex;
   align-items: center;
+  justify-content: space-between;
+    .contactanos-form{
+      display: grid;
+      grid-template-areas:
+        "h1"
+        "label-nombre"
+        "input-nombre"
+        "label-email"
+        "input-email"
+        "submit";
+      gap: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid v.$color-principal;
+      background-color: v.$bg-color;
+      border-radius: 5px;
+  }
 }
 
 
-.contactanos-form{
-  display: grid;
-  grid-template-areas:
-    "h1"
-    "label-nombre"
-    "input-nombre"
-    "label-email"
-    "input-email"
-    "submit";
-  gap: 10px;
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid v.$color-principal;
-  background-color: v.$bg-color;
-  border-radius: 5px;
-}
 
 
 @include v.mobile{
+  iframe{
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+  .contactanos_main{
+    flex-direction: column;
+  }
   .contactanos-form{
     padding: 10px;
     max-width: 90%;
   }
 }
 @include v.tablet{
-  .contactanos-form{
-    padding: 15px;
-    max-width: 70%;
+  iframe{
+    width: 90%;
+    margin: 10px 0;
+  }
+  .contactanos_main{
+    flex-direction: column;
+    .contactanos-form{
+      padding: 15px;
+      max-width: 70%;
+    }
   }
 }
