@@ -30,6 +30,26 @@
     color: v.$color-principal;
     font-weight: bold;
   }
+}
 
+@include v.mobile{
+  .main_no{
+    grid-template-areas: 
+      "h2"
+      "c1"
+      "c2"
+      "c3";
+  }
+}
 
+@include v.tablet{
+  .main_no{
+    grid-template-areas: 
+      "h2 h2"
+      "c1 c2"
+      "c3 c3";
+  }
+  .c3{
+    justify-self: center;
+  }
 }

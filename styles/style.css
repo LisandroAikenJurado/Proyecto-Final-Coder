@@ -73,6 +73,19 @@
   font-weight: bold;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .main_no {
+    grid-template-areas: "h2" "c1" "c2" "c3";
+  }
+}
+@media (min-width: 431px) and (max-width: 968px) {
+  .main_no {
+    grid-template-areas: "h2 h2" "c1 c2" "c3 c3";
+  }
+  .c3 {
+    justify-self: center;
+  }
+}
 nav {
   display: flex;
   align-items: center;
