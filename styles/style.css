@@ -43,6 +43,36 @@
     max-width: 70%;
   }
 }
+.main_no {
+  display: grid;
+  grid-template-areas: "h2 h2 h2" "c1 c2 c3";
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.main_no .titulo_nuestros_objetivos {
+  grid-area: h2;
+  text-align: center;
+  color: #2d5380;
+  font-weight: bold;
+}
+.main_no .c1 {
+  grid-area: c1;
+}
+.main_no .c2 {
+  grid-area: c2;
+}
+.main_no .c3 {
+  grid-area: c3;
+}
+.main_no .card-text {
+  color: #037a40;
+}
+.main_no .card-title {
+  color: #2d5380;
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   align-items: center;

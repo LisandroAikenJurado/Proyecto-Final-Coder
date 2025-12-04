@@ -1,0 +1,35 @@
+@use "variables" as v;  
+
+.main_no{
+  display: grid;
+  grid-template-areas: 
+    "h2 h2 h2"
+    "c1 c2 c3";
+    justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem 0;
+  .titulo_nuestros_objetivos{
+    grid-area: h2;
+    text-align: center;
+    color: v.$color-principal;
+    font-weight: bold;
+  }
+  .c1{
+    grid-area: c1;
+  }
+  .c2{
+    grid-area: c2;
+  }
+  .c3{
+    grid-area: c3;
+  }
+  .card-text{
+    color: v.$color-secundario;
+  }
+  .card-title{
+    color: v.$color-principal;
+    font-weight: bold;
+  }
+
+
+}
